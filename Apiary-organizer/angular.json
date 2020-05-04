@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Apiary-organizer": {
+    "apiary-organizer": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Apiary-organizer",
+            "outputPath": "dist/apiary-organizer",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Apiary-organizer:build"
+            "browserTarget": "apiary-organizer:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Apiary-organizer:build:production"
+              "browserTarget": "apiary-organizer:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Apiary-organizer:build"
+            "browserTarget": "apiary-organizer:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Apiary-organizer:serve"
+            "devServerTarget": "apiary-organizer:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Apiary-organizer:serve:production"
+              "devServerTarget": "apiary-organizer:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Apiary-organizer"
+  "defaultProject": "apiary-organizer"
 }
