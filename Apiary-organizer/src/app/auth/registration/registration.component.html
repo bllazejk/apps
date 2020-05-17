@@ -1,25 +1,38 @@
-<img mat-card-image src="../assets/img/logo.png" alt="Photo of a Shiba Inu">
 <br>
+
+<div class="container">
+    <img class="logo" mat-card-image src="../assets/img/logo.png" alt="Pasieka Hekor">
+</div>
+
+<br>
+
 <mat-toolbar-row>
     <span class="spacer"></span>
-    <span><h2>Rejestracja</h2></span>
+    <span>
+        <h2>Rejestracja</h2>
+    </span>
     <span class="spacer"></span>
-  </mat-toolbar-row>
+</mat-toolbar-row>
 <br>
-<mat-card-content>
-    <mat-form-field>
-        <input matInput placeholder="Email">
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
+<div class="container">
+    <mat-form-field class="my-form">
+        <mat-label>Login</mat-label>
+        <input matInput placeholder="Login">
+      </mat-form-field>
+</div>
+<div class="container">
+    <mat-form-field class="my-form">
+        <mat-label>Hasło</mat-label>
         <input matInput placeholder="Hasło">
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
-        <input matInput placeholder="Potwierdź hasło">
-    </mat-form-field>
-
-
-</mat-card-content>
-
-<button mat-flat-button color="primary">Zarejestruj</button>
+      </mat-form-field>
+</div>
+<div class="container">
+    <mat-form-field class="my-form">
+        <mat-label>Powtórz hasło</mat-label>
+        <input matInput placeholder="Powtórz hasło">
+      </mat-form-field>
+</div>
+<br><br>
+<div class="container">
+    <button mat-flat-button color="primary">Zarejestruj</button>
+</div>

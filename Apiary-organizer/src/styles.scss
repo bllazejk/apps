@@ -4,10 +4,30 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .spacer {
-    flex: 1 1 auto;
-  }
+  flex: 1 1 auto;
+}
 
-  .logo {
-    background-image: url('./assets\img\logo.png');
-    background-size: cover;
-  }
+.logo {
+  width: 192px;
+  height: 192PX;
+}
+
+.my-form{
+  min-width: 224px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0px 48px;
+}
+ 
+.full-width {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
+}
+
