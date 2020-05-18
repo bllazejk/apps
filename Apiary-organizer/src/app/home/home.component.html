@@ -1,1 +1,13 @@
-<p>home works!</p>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span class="spacer"></span>
+        <span>
+            <p *ngIf="user">{{user?.email}}</p>
+        </span>
+        <span class="spacer"></span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<button class="btn btn-primary mr-2" *ngIf="!user" (click)="register()">Register</button>
+<button class="btn btn-primary" *ngIf="user" (click)="logout()">Logout</button>
+<button class="btn btn-primary" *ngIf="!user" (click)="login()">Login</button>

@@ -1,1 +1,46 @@
-its work
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span class="spacer"></span>
+      <span>Organizator pasieki</span>
+      <span class="spacer"></span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+<br>
+<div class="container">
+    <img class="logo" mat-card-image src="../assets/img/logo.png" alt="Pasieka Hekor">
+</div>
+
+<br>
+
+<mat-toolbar-row>
+    <span class="spacer"></span>
+    <span>
+        <h2>Zaloguj się</h2>
+    </span>
+    <span class="spacer"></span>
+</mat-toolbar-row>
+
+<div class="container" *ngIf="authError">
+    <div class="alert alert-danger" >
+        {{ authError?.message }}
+    </div>
+</div>
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+    <div class="container">
+        <mat-form-field class="my-form">
+            <mat-label for="email">Email</mat-label>
+            <input placeholder="Email" matInput ngModel #email="ngModel" name="email" type="email">
+        </mat-form-field>
+    </div>
+    <div class="container">
+        <mat-form-field class="my-form">
+            <mat-label for="password">Hasło</mat-label>
+            <input placeholder="Hasło" matInput ngModel #password="ngModel" name="password" type="password" autocomplete="on">
+        </mat-form-field>
+    </div>
+    <br><br>
+    <div class="container">
+        <button mat-flat-button color="primary" type="submit">Zaloguj</button>
+    </div>
+</form>
